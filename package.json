@@ -8,6 +8,13 @@
     "name": "Joao Gomes",
     "email": "joao.gomes@anapaya.net"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JMGomes/angular-latest-snippets"
+  },
+  "bugs": {
+    "url": "https://github.com/JMGomes/angular-latest-snippets/issues"
+  },
   "icon": "images/angular_snippets.png",
   "galleryBanner": {
     "color": "#0273D4",

@@ -42,15 +42,6 @@
       "}"
     ]
   },
-  "Angular @defer statement": {
-    "prefix": ["@defer", "angular-defer", "defer"],
-    "description": "Angular @defer statement for deferrable views",
-    "body": [
-      "@defer (let $1) {",
-      "  $0",
-      "}"
-    ]
-  },
   "Angular @defer with placeholder and loading": {
     "prefix": ["@defer", "angular-defer", "defer"],
     "description": "Angular @defer statement with placeholder and loading for deferrable views",

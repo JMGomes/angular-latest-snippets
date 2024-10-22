@@ -89,9 +89,3 @@
     ]
   }
 }
-
-- New Control flow (@if, @else, @for, @switch)
-- Deferrable Views (@defer, @placeholder, @loading)
-- Functional Route Guards
-
-variable2 = input.required<string>();
