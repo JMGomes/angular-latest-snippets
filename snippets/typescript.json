@@ -1,0 +1,97 @@
+{
+  "Angular Standalone Component": {
+    "prefix": "component",
+    "description": "Angular standalone component",
+    "body": [
+      "import { ChangeDetectionStrategy, Component } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tstandalone: true,",
+      "\tchangeDetection: ChangeDetectionStrategy.OnPush,",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: './${2:name}.component.html',",
+      "\timports: [],",
+      "})",
+      "export class ${3:Name}Component {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Angular Standalone Directive": {
+    "prefix": "directive",
+    "description": "Angular standalone directive",
+    "body": [
+      "import { Directive } from '@angular/core';",
+      "",
+      "@Directive({",
+      "\tselector: '[${1:name}]',",
+      "\tstandalone: true,",
+      "})",
+      "export class ${2:Name}Directive {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Angular Standalone Pipe": {
+    "prefix": "pipe",
+    "description": "Angular standalone pipe",
+    "body": [
+      "import { Pipe, PipeTransform } from '@angular/core';",
+      "",
+      "@Pipe({",
+      "\tname: '${1:name}',",
+      "\tstandalone: true,",
+      "})",
+      "export class ${2:Name}Pipe implements PipeTransform {",
+      "\ttransform(value: ${3:type}): ${3:type} {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ]
+  },
+  "Angular Effect": {
+    "prefix": "effect",
+    "description": "Angular effect function",
+    "body": [
+      "effect(() => {",
+      "\t$1",
+      "});"
+    ]
+  },
+  "Angular Computed Signal": {
+    "prefix": "computed",
+    "description": "Angular computed signal",
+    "body": [
+      "${1:newSignal} = computed(() => {",
+      "\treturn ${2:otherSignal}();",
+      "});"
+    ]
+  },
+  "Angular Required Input Signal": {
+    "prefix": "inputRequired",
+    "description": "Angular required input signal",
+    "body": [
+      "${1:newSignal} = input.required<${2:signalType}>();"
+    ]
+  },
+  "Angular Optional Input Signal": {
+    "prefix": "inputOptional",
+    "description": "Angular optional input signal",
+    "body": [
+      "${1:newSignal} = input.optional<${2:signalType}>(${3:defaultValue});"
+    ]
+  },
+  "Angular Output Signal": {
+    "prefix": "output",
+    "description": "Angular output signal",
+    "body": [
+      "${1:newSignal} = output<${2:signalType}>();"
+    ]
+  }
+}
+
+- New Control flow (@if, @else, @for, @switch)
+- Deferrable Views (@defer, @placeholder, @loading)
+- Functional Route Guards
+
+variable2 = input.required<string>();

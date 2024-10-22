@@ -1,0 +1,67 @@
+{
+  "Angular @if statement": {
+    "prefix": ["@if", "angular-if", "if"],
+    "description": "Angular @if statement for conditional rendering",
+    "body": [
+      "@if ($1) {",
+      "  $0",
+      "}"
+    ]
+  },
+  "Angular @if @else statement": {
+    "prefix": ["@if", "angular-if-else", "if-else"],
+    "description": "Angular @if @else statement for conditional rendering",
+    "body": [
+      "@if ($1) {",
+      "  $0",
+      "} @else {",
+      "  $0",
+      "}"
+    ]
+  },
+  "Angular @for statement": {
+    "prefix": ["@for", "angular-for", "for"],
+    "description": "Angular @for statement for looping",
+    "body": [
+      "@for (let $1 of $2; track $1) {",
+      "  $0",
+      "}"
+    ]
+  },
+  "Angular @switch statement": {
+    "prefix": ["@switch", "angular-switch", "switch"],
+    "description": "Angular @switch statement for conditional rendering",
+    "body": [
+      "@switch ($1) {",
+      "  @case ($2) {",
+      "    $0",
+      "  }",
+      "  @default {",
+      "    $0",
+      "  }",
+      "}"
+    ]
+  },
+  "Angular @defer statement": {
+    "prefix": ["@defer", "angular-defer", "defer"],
+    "description": "Angular @defer statement for deferrable views",
+    "body": [
+      "@defer (let $1) {",
+      "  $0",
+      "}"
+    ]
+  },
+  "Angular @defer with placeholder and loading": {
+    "prefix": ["@defer", "angular-defer", "defer"],
+    "description": "Angular @defer statement with placeholder and loading for deferrable views",
+    "body": [
+      "@defer {",
+      "  <${1:large-component} />",
+      "} @placeholder {",
+      "  ${2:Placeholder...}",
+      "} @loading {",
+    "  ${3:Loading...}",
+    "}"
+  ]
+}
+}

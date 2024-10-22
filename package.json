@@ -1,0 +1,51 @@
+{
+  "name": "angular-latest-snippets",
+  "displayName": "Angular Latest Snippets",
+  "description": "Latest best practices - Signals, OnPush, Control flow, Standalone as default...",
+  "version": "0.0.1",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": {
+    "name": "Joao Gomes",
+    "email": "joao.gomes@anapaya.net"
+  },
+  "icon": "images/angular_snippets.png",
+  "galleryBanner": {
+    "color": "#0273D4",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Snippets",
+    "Programming Languages"
+  ],
+  "keywords": [
+    "Angular",
+    "Angular 19",
+    "TypeScript",
+    "HTML",
+    "Angular Signals",
+    "Standalone Components",
+    "OnPush",
+    "Control Flow"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "npx vsce package",
+    "publish": "npx vsce publish",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "open-in-browser": "vscode-test-web --extensionDevelopmentPath=. ."
+  }
+}
