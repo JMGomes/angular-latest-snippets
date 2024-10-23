@@ -2,7 +2,7 @@
   "name": "angular-latest-snippets",
   "displayName": "Angular Latest Snippets",
   "description": "Latest best practices - Signals, OnPush, Control flow, Standalone as default...",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "license": "SEE LICENSE IN LICENSE.md",
   "publisher": "JMGomes",
   "author": {

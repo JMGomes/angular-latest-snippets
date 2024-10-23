@@ -1,7 +1,9 @@
 # Angular TypeScript Snippets suitable for V19
 
 Works with Angular v19. Snippets for TypeScript and HTML.
-Developed due to the lack of snippets for the latest Angular features
+Developed due to the lack of snippets for the latest Angular features.
+
+![Demo Snippets](images/demo-snippets.gif)
 
 ## Features
 
