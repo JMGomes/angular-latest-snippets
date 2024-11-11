@@ -67,6 +67,87 @@
       "});"
     ]
   },
+  "Angular linkedSignal": {
+    "prefix": "linkedSignal",
+    "description": "Angular linkedSignal",
+    "body": [
+      "const ${1:newSignal} = linkedSignal(() => ${2:sourceSignal}());"
+    ]
+  },
+  "Angular linkedSignal with source and computation": {
+    "prefix": "linkedSignal source and computation",
+    "description": "Angular linkedSignal signal with source and computation",
+    "body": [
+      "const ${1:newSignal} = linkedSignal({",
+      "\tsource: ${2:sourceSignal},",
+      "\tcomputation: () => ${2:sourceSignal}(),",
+      "});"
+    ]
+  },
+  "Angular Resource Signal": {
+    "prefix": "resource",
+    "description": "Angular resource signal",
+    "body": [
+      "const ${1:newSignal} = resource({",
+      "\tloader: () => ${2:returnPromise}",
+      "});"
+    ]
+  },
+  "Angular Resource Signal with request": {
+    "prefix": "resource request",
+    "description": "Angular resource signal with request",
+    "body": [
+      "const ${1:newSignal} = resource({",
+      "\trequest: () => ${2:sourceSignal}(),",
+      "\tloader: ({request: ${3:requestAlias}}) => ${4:returnPromise}",
+      "});"
+    ]
+  },
+  "Angular resource Signal with complex request": {
+    "prefix": "resource request",
+    "description": "Angular Resource signal with complex request",
+    "body": [
+      "const ${1:newSignal} = resource({",
+      "\trequest: () => ({",
+      "\t\t${2:property1}: ${3:sourceSignal}()",
+      "\t\t${4:property2}: ${5:sourceSignal2}()",
+      "\t}),",
+      "\tloader: ({request}) => ${6:returnPromise}",
+      "});"
+    ]
+  },
+  "Angular rxResource Signal": {
+    "prefix": "rxResource",
+    "description": "Angular rxResource signal",
+    "body": [
+      "const ${1:newSignal} = rxResource({",
+      "\tloader: () => ${2:returnObservable}",
+      "});"
+    ]
+  },
+  "Angular rxResource Signal with request": {
+    "prefix": "rxResource request",
+    "description": "Angular rxResource signal with request",
+    "body": [
+      "const ${1:newSignal} = rxResource({",
+      "\trequest: () => ${2:sourceSignal}(),",
+      "\tloader: ({request: ${3:requestAlias}}) => ${4:returnObservable}",
+      "});"
+    ]
+  },
+  "Angular rxResource Signal with complex request": {
+    "prefix": "rxResource request",
+    "description": "Angular rxResource signal with complex request",
+    "body": [
+      "const ${1:newSignal} = rxResource({",
+      "\trequest: () => ({",
+      "\t\t${2:property1}: ${3:sourceSignal}()",
+      "\t\t${4:property2}: ${5:sourceSignal2}()",
+      "\t}),",
+      "\tloader: ({request}) => ${6:returnObservable}",
+      "});"
+    ]
+  },
   "Angular Required Input Signal": {
     "prefix": "inputRequired",
     "description": "Angular required input signal",
