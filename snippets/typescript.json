@@ -159,7 +159,7 @@
     "prefix": "inputOptional",
     "description": "Angular optional input signal",
     "body": [
-      "${1:newSignal} = input.optional<${2:signalType}>(${3:defaultValue});"
+      "${1:newSignal} = input<${2:signalType}>(${3:defaultValue});"
     ]
   },
   "Angular Output Signal": {
