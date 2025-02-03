@@ -6,7 +6,6 @@
       "import { ChangeDetectionStrategy, Component } from '@angular/core';",
       "",
       "@Component({",
-      "\tstandalone: true,",
       "\tchangeDetection: ChangeDetectionStrategy.OnPush,",
       "\tselector: '${1:selector-name}',",
       "\ttemplateUrl: './${2:name}.component.html',",
@@ -25,7 +24,6 @@
       "",
       "@Directive({",
       "\tselector: '[${1:name}]',",
-      "\tstandalone: true,",
       "})",
       "export class ${2:Name}Directive {",
       "\t$0",
@@ -40,7 +38,6 @@
       "",
       "@Pipe({",
       "\tname: '${1:name}',",
-      "\tstandalone: true,",
       "})",
       "export class ${2:Name}Pipe implements PipeTransform {",
       "\ttransform(value: ${3:type}): ${3:type} {",
@@ -71,14 +68,14 @@
     "prefix": "linkedSignal",
     "description": "Angular linkedSignal",
     "body": [
-      "const ${1:newSignal} = linkedSignal(() => ${2:sourceSignal}());"
+      "${1:newSignal} = linkedSignal(() => ${2:sourceSignal}());"
     ]
   },
   "Angular linkedSignal with source and computation": {
     "prefix": "linkedSignal source and computation",
     "description": "Angular linkedSignal signal with source and computation",
     "body": [
-      "const ${1:newSignal} = linkedSignal({",
+      "${1:newSignal} = linkedSignal({",
       "\tsource: ${2:sourceSignal},",
       "\tcomputation: () => ${2:sourceSignal}(),",
       "});"
@@ -88,7 +85,7 @@
     "prefix": "resource",
     "description": "Angular resource signal",
     "body": [
-      "const ${1:newSignal} = resource({",
+      "${1:newSignal} = resource({",
       "\tloader: () => ${2:returnPromise}",
       "});"
     ]
@@ -97,7 +94,7 @@
     "prefix": "resource request",
     "description": "Angular resource signal with request",
     "body": [
-      "const ${1:newSignal} = resource({",
+      "${1:newSignal} = resource({",
       "\trequest: () => ${2:sourceSignal}(),",
       "\tloader: ({request: ${3:requestAlias}}) => ${4:returnPromise}",
       "});"
@@ -107,7 +104,7 @@
     "prefix": "resource request",
     "description": "Angular Resource signal with complex request",
     "body": [
-      "const ${1:newSignal} = resource({",
+      "${1:newSignal} = resource({",
       "\trequest: () => ({",
       "\t\t${2:property1}: ${3:sourceSignal}()",
       "\t\t${4:property2}: ${5:sourceSignal2}()",
@@ -120,7 +117,7 @@
     "prefix": "rxResource",
     "description": "Angular rxResource signal",
     "body": [
-      "const ${1:newSignal} = rxResource({",
+      "${1:newSignal} = rxResource({",
       "\tloader: () => ${2:returnObservable}",
       "});"
     ]
@@ -129,7 +126,7 @@
     "prefix": "rxResource request",
     "description": "Angular rxResource signal with request",
     "body": [
-      "const ${1:newSignal} = rxResource({",
+      "${1:newSignal} = rxResource({",
       "\trequest: () => ${2:sourceSignal}(),",
       "\tloader: ({request: ${3:requestAlias}}) => ${4:returnObservable}",
       "});"
@@ -139,7 +136,7 @@
     "prefix": "rxResource request",
     "description": "Angular rxResource signal with complex request",
     "body": [
-      "const ${1:newSignal} = rxResource({",
+      "${1:newSignal} = rxResource({",
       "\trequest: () => ({",
       "\t\t${2:property1}: ${3:sourceSignal}()",
       "\t\t${4:property2}: ${5:sourceSignal2}()",

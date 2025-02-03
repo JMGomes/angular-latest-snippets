@@ -1,8 +1,8 @@
 {
   "name": "angular-latest-snippets",
-  "displayName": "Angular Snippets 2024 - v19",
+  "displayName": "Angular Snippets 2025 - v19",
   "description": "Latest best practices - Signals, OnPush, Control flow, Standalone as default...",
-  "version": "0.0.8",
+  "version": "1.0.3",
   "license": "SEE LICENSE IN LICENSE.md",
   "publisher": "JMGomes",
   "author": {
@@ -31,7 +31,7 @@
   "keywords": [
     "Angular",
     "Angular v19",
-    "Angular 2024",
+    "Angular 2025",
     "Angular snippets",
     "TypeScript",
     "HTML",
