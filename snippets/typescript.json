@@ -165,5 +165,15 @@
     "body": [
       "${1:newSignal} = output<${2:signalType}>();"
     ]
+  },
+  "httpResource": {
+    "prefix": "httpResource",
+    "description": "Angular httpResource",
+    "body": [
+      "${1:newSignal} = httpResource({",
+      "\turl: '${2:url}',",
+      "\tmethod: '${3:method}',",
+      "});"
+    ]
   }
 }

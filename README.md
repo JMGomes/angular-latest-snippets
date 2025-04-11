@@ -36,6 +36,7 @@ If you have any requirements or dependencies, add a section describing those and
 | `linkedSignal`  | Angular linkedSignal                  |
 | `resource`      | Angular resource                      |
 | `rxResource`    | Angular rxResource                    |
+| `httpResource`  | Angular httpResource                  |
 | `inputRequired` | Angular required input signal         |
 | `inputOptional` | Angular optional input signal         |
 | `output`        | Angular output signal                 |
@@ -51,6 +52,6 @@ If you have any requirements or dependencies, add a section describing those and
 | `@defer`   | Angular @defer statement        |
 
 - Inspired by johnpapa snippets. 
-- Updated February 2025
+- Updated April 2025
 
 **Enjoy!**
